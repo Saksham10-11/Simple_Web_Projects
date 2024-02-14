@@ -1,0 +1,84 @@
+:root {
+  --palette-light-green: rgb(217, 237, 191);
+  --palette-light-peach: rgb(255, 185, 150);
+  --pallete-light-orange: rgb(255, 207, 129);
+  --palette-light-yellow: rgb(253, 255, 171);
+}
+
+html,
+body,
+div {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+.main-container {
+  background-color: antiquewhite;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  width: 100vw;
+  height: 100vh;
+}
+
+.submain-container-1 {
+  background-color: aqua;
+}
+
+.submain-container-2 {
+  background-color: bisque;
+  display: grid;
+  grid-template-rows: 2fr 9fr;
+}
+
+.top-container {
+  background-color: aquamarine;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+.below-container {
+  background-color: cadetblue;
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+}
+
+.center-container {
+  background-color: burlywood;
+}
+
+.right-container {
+  background-color: azure;
+}
+
+.menu-container {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-rows: 1fr 4fr 3fr;
+  gap: 4rem;
+  height: 75%;
+  background-color: blueviolet;
+}
+
+.menu-title-container {
+  background-color: blue;
+}
+
+.menu-options-container {
+  background-color: blanchedalmond;
+}
+
+.menu-settings-container {
+  background-color: rgb(160, 139, 111);
+}
+
+.search-container {
+  background-color: chartreuse;
+}
+
+.buttons-container {
+  background-color: chocolate;
+}
