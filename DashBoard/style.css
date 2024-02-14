@@ -309,3 +309,12 @@ button {
   padding-left: 1rem;
   padding-right: 0.75rem;
 }
+
+.search-field {
+  border-radius: 10px;
+  border-style: none;
+  border: 0;
+  padding: 0.5rem;
+  width: 80%;
+  height: 0.8rem;
+}
