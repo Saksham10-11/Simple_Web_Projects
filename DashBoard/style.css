@@ -7,7 +7,10 @@
 
 html,
 body,
-div {
+div,
+h1,
+h2,
+h3 {
   padding: 0;
   margin: 0;
 }
@@ -33,7 +36,7 @@ button {
 .main-container {
   background-color: antiquewhite;
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 5fr;
   width: 100vw;
   height: 100vh;
 }
@@ -47,13 +50,13 @@ button {
 .submain-container-2 {
   background-color: bisque;
   display: grid;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 1fr 5fr;
 }
 
 .top-container {
   background-color: aquamarine;
   display: grid;
-  grid-template-rows: 1fr 1.4fr;
+  grid-template-rows: 1fr 1.6fr;
 }
 
 .below-container {
@@ -65,7 +68,22 @@ button {
 .center-container {
   background-color: burlywood;
   padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.center-cards-container {
+  background-color: dimgray;
+  height: 90%;
+  padding: 1rem;
   display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+}
+
+.card {
+  background-color: darkcyan;
 }
 
 .right-container {
@@ -77,17 +95,29 @@ button {
 .right-container-top {
   background-color: rgb(47, 107, 160);
   padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .right-container-bottom {
   background-color: aquamarine;
   padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.anouncements-container {
+  background-color: aqua;
+  height: 85%;
+}
+
+.trending-container {
+  background-color: bisque;
+  height: 85%;
 }
 
 .menu-container {
   display: grid;
   grid-template-rows: 1fr 4fr 3fr;
-  gap: 3rem;
+  gap: 2rem;
   height: 75%;
   background-color: blueviolet;
 }
