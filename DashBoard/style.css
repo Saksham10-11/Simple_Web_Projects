@@ -16,6 +16,20 @@ body {
   overflow: hidden;
 }
 
+button {
+  background-color: powderblue;
+  color: #fff;
+  border: none;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-size: 1.5rem;
+}
+
 .main-container {
   background-color: antiquewhite;
   display: grid;
@@ -26,18 +40,20 @@ body {
 
 .submain-container-1 {
   background-color: aqua;
+  display: grid;
+  grid-template-rows: 1fr;
 }
 
 .submain-container-2 {
   background-color: bisque;
   display: grid;
-  grid-template-rows: 2fr 9fr;
+  grid-template-rows: 1fr 4fr;
 }
 
 .top-container {
   background-color: aquamarine;
   display: grid;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 1fr 1.4fr;
 }
 
 .below-container {
@@ -48,37 +64,146 @@ body {
 
 .center-container {
   background-color: burlywood;
+  padding-left: 1rem;
+  display: grid;
 }
 
 .right-container {
-  background-color: azure;
+  background-color: rgb(140, 219, 219);
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.right-container-top {
+  background-color: rgb(47, 107, 160);
+  padding-left: 1rem;
+}
+
+.right-container-bottom {
+  background-color: aquamarine;
+  padding-left: 1rem;
 }
 
 .menu-container {
-  margin-top: 1rem;
   display: grid;
   grid-template-rows: 1fr 4fr 3fr;
-  gap: 4rem;
+  gap: 3rem;
   height: 75%;
   background-color: blueviolet;
 }
 
 .menu-title-container {
   background-color: blue;
+  display: inline-flex;
+  justify-items: start;
+  align-items: center;
 }
 
 .menu-options-container {
   background-color: blanchedalmond;
+  display: grid;
+  grid-template-rows: repeat(1fr, 5);
+  gap: 0;
 }
 
 .menu-settings-container {
   background-color: rgb(160, 139, 111);
+  display: grid;
+  grid-template-rows: repeat(1fr, 5);
+  gap: 0;
 }
 
 .search-container {
   background-color: chartreuse;
+  display: inline-flex;
+}
+
+.left-search-container {
+  background-color: aquamarine;
+  flex: 2 1 0;
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+  padding-left: 1.5rem;
+}
+
+.right-search-container {
+  background-color: peachpuff;
+  flex: 1 1 0;
+  display: inline-flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  height: 100%;
+  padding-right: 3rem;
+  gap: 1rem;
 }
 
 .buttons-container {
   background-color: chocolate;
+  display: inline-flex;
+}
+
+.left-buttons-container {
+  background-color: rgb(142, 163, 156);
+  flex: 1 1 0;
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+  padding-left: 3rem;
+}
+
+.right-buttons-container {
+  background-color: rgb(228, 165, 109);
+  flex: 1 1 0;
+  display: inline-flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  height: 100%;
+  padding-right: 3rem;
+  gap: 2rem;
+}
+
+.dashboard-icon {
+  height: 3.5rem;
+  width: 3.5rem;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.menu-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+}
+
+.menu-options {
+  display: inline-flex;
+  height: 3rem;
+  justify-items: start;
+  align-items: center;
+  padding-left: 0.5rem;
+}
+
+.search-field {
+  width: 60%;
+}
+
+.search-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+}
+
+.profile-image {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.main-profile-image {
+  height: 4rem;
+  width: 4rem;
+  margin-right: 1rem;
 }
