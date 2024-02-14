@@ -50,7 +50,7 @@ button {
 .submain-container-2 {
   background-color: bisque;
   display: grid;
-  grid-template-rows: 1fr 5fr;
+  grid-template-rows: 1fr 5.5fr;
 }
 
 .top-container {
@@ -73,17 +73,21 @@ button {
 
 .center-cards-container {
   background-color: dimgray;
-  height: 90%;
+  height: 88%;
   padding: 1rem;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-  row-gap: 2rem;
+  row-gap: 1.5rem;
   grid-template-columns: 1fr 1fr;
   column-gap: 3rem;
 }
 
 .card {
   background-color: darkcyan;
+  border-radius: 10px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 20fr;
 }
 
 .right-container {
@@ -96,29 +100,69 @@ button {
   background-color: rgb(47, 107, 160);
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-top: 0.5rem;
 }
 
 .right-container-bottom {
   background-color: aquamarine;
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-top: 0.5rem;
 }
 
 .anouncements-container {
   background-color: aqua;
   height: 85%;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding: 0.5rem;
+  text-align: justify;
+}
+
+.anouncements-container-content1 {
+  background-color: azure;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+}
+
+.anouncements-container-content2 {
+  border-top: 1px;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-style: solid;
+  border-color: black;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  background-color: antiquewhite;
 }
 
 .trending-container {
   background-color: bisque;
   height: 85%;
+  border-radius: 10px;
+  display: grid;
+  padding: 0.5rem;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.trending-container-content {
+  background-color: blanchedalmond;
+  display: inline-flex;
+  height: 5rem;
+  justify-items: start;
+  align-items: center;
+  padding-left: 0.5rem;
 }
 
 .menu-container {
   display: grid;
   grid-template-rows: 1fr 4fr 3fr;
   gap: 2rem;
-  height: 75%;
+  height: 70%;
   background-color: blueviolet;
 }
 
@@ -132,14 +176,12 @@ button {
 .menu-options-container {
   background-color: blanchedalmond;
   display: grid;
-  grid-template-rows: repeat(1fr, 5);
   gap: 0;
 }
 
 .menu-settings-container {
   background-color: rgb(160, 139, 111);
   display: grid;
-  grid-template-rows: repeat(1fr, 5);
   gap: 0;
 }
 
@@ -236,4 +278,34 @@ button {
   height: 4rem;
   width: 4rem;
   margin-right: 1rem;
+}
+
+#strip {
+  background-color: yellowgreen;
+}
+
+.card-main-section {
+  background-color: bisque;
+  display: grid;
+  padding: 0.5rem;
+}
+
+.card-main-section-content {
+  background-color: aquamarine;
+  text-align: justify;
+}
+
+.card-main-section-buttons {
+  background-color: blanchedalmond;
+  display: inline-flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+
+.trending-image {
+  height: 3.5rem;
+  width: 3.5rem;
+  padding-left: 1rem;
+  padding-right: 0.75rem;
 }
