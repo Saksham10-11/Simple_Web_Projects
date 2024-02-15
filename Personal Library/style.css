@@ -1,0 +1,60 @@
+:root {
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+div,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  height: 100%;
+}
+
+.main-container {
+  background-color: bisque;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 14fr;
+}
+
+.header-container {
+  background-color: aquamarine;
+}
+
+.center-container {
+  background-color: burlywood;
+  display: grid;
+  grid-template-columns: 4fr 1.5fr;
+}
+
+.content-container {
+  background-color: beige;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.right-container {
+  background-color: cadetblue;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.todo-container {
+  background-color: cornsilk;
+}
+
+.noted-container {
+  background-color: azure;
+}
