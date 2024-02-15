@@ -1,7 +1,7 @@
 :root {
   --palette-light-green: rgb(217, 237, 191);
   --palette-light-peach: rgb(255, 185, 150);
-  --pallete-light-orange: rgb(255, 207, 129);
+  --pallete-light-orange: rgb(232, 173, 79);
   --palette-light-yellow: rgb(253, 255, 171);
 }
 
@@ -20,8 +20,8 @@ body {
 }
 
 button {
-  background-color: powderblue;
   color: #fff;
+  background-color: var(--pallete-light-orange);
   border: none;
   padding: 5px 20px;
   text-align: center;
@@ -34,7 +34,6 @@ button {
 }
 
 .main-container {
-  background-color: antiquewhite;
   display: grid;
   grid-template-columns: 1fr 5fr;
   width: 100vw;
@@ -42,37 +41,33 @@ button {
 }
 
 .submain-container-1 {
-  background-color: aqua;
   display: grid;
   grid-template-rows: 1fr;
+  background-color: var(--pallete-light-orange);
 }
 
 .submain-container-2 {
-  background-color: bisque;
   display: grid;
   grid-template-rows: 1fr 5.5fr;
 }
 
 .top-container {
-  background-color: aquamarine;
   display: grid;
   grid-template-rows: 1fr 1.6fr;
 }
 
 .below-container {
-  background-color: cadetblue;
   display: grid;
   grid-template-columns: 5fr 2fr;
+  background-color: rgba(169, 169, 169, 0.266);
 }
 
 .center-container {
-  background-color: burlywood;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
 .center-cards-container {
-  background-color: dimgray;
   height: 88%;
   padding: 1rem;
   display: grid;
@@ -83,7 +78,6 @@ button {
 }
 
 .card {
-  background-color: darkcyan;
   border-radius: 10px;
   overflow: hidden;
   display: grid;
@@ -91,37 +85,33 @@ button {
 }
 
 .right-container {
-  background-color: rgb(140, 219, 219);
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
 
 .right-container-top {
-  background-color: rgb(47, 107, 160);
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.5rem;
 }
 
 .right-container-bottom {
-  background-color: aquamarine;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.5rem;
 }
 
 .anouncements-container {
-  background-color: aqua;
   height: 85%;
   border-radius: 10px;
   display: grid;
   grid-template-rows: 1fr 1fr;
   padding: 0.5rem;
   text-align: justify;
+  background-color: whitesmoke;
 }
 
 .anouncements-container-content1 {
-  background-color: azure;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 1rem;
@@ -137,20 +127,18 @@ button {
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.5rem;
-  background-color: antiquewhite;
 }
 
 .trending-container {
-  background-color: bisque;
-  height: 85%;
+  height: 75%;
   border-radius: 10px;
   display: grid;
   padding: 0.5rem;
   grid-template-rows: 1fr 1fr 1fr;
+  background-color: whitesmoke;
 }
 
 .trending-container-content {
-  background-color: blanchedalmond;
   display: inline-flex;
   height: 5rem;
   justify-items: start;
@@ -163,35 +151,33 @@ button {
   grid-template-rows: 1fr 4fr 3fr;
   gap: 2rem;
   height: 70%;
-  background-color: blueviolet;
+  background-color: var(--pallete-light-orange);
 }
 
 .menu-title-container {
-  background-color: blue;
+  background-color: var(--palette-light-orange);
   display: inline-flex;
   justify-items: start;
   align-items: center;
 }
 
 .menu-options-container {
-  background-color: blanchedalmond;
+  background-color: var(--pallete-light-orange);
   display: grid;
   gap: 0;
 }
 
 .menu-settings-container {
-  background-color: rgb(160, 139, 111);
+  background-color: var(--pallete-light-orange);
   display: grid;
   gap: 0;
 }
 
 .search-container {
-  background-color: chartreuse;
   display: inline-flex;
 }
 
 .left-search-container {
-  background-color: aquamarine;
   flex: 2 1 0;
   display: inline-flex;
   align-items: center;
@@ -200,7 +186,6 @@ button {
 }
 
 .right-search-container {
-  background-color: peachpuff;
   flex: 1 1 0;
   display: inline-flex;
   flex-direction: row-reverse;
@@ -211,12 +196,10 @@ button {
 }
 
 .buttons-container {
-  background-color: chocolate;
   display: inline-flex;
 }
 
 .left-buttons-container {
-  background-color: rgb(142, 163, 156);
   flex: 1 1 0;
   display: inline-flex;
   align-items: center;
@@ -225,7 +208,6 @@ button {
 }
 
 .right-buttons-container {
-  background-color: rgb(228, 165, 109);
   flex: 1 1 0;
   display: inline-flex;
   flex-direction: row-reverse;
@@ -260,6 +242,7 @@ button {
 
 .search-field {
   width: 60%;
+  background-color: rgba(169, 169, 169, 0.8);
 }
 
 .search-icon {
@@ -281,22 +264,20 @@ button {
 }
 
 #strip {
-  background-color: yellowgreen;
+  background-color: var(--palette-light-peach);
 }
 
 .card-main-section {
-  background-color: bisque;
   display: grid;
   padding: 0.5rem;
+  background-color: whitesmoke;
 }
 
 .card-main-section-content {
-  background-color: aquamarine;
   text-align: justify;
 }
 
 .card-main-section-buttons {
-  background-color: blanchedalmond;
   display: inline-flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -317,4 +298,12 @@ button {
   padding: 0.5rem;
   width: 80%;
   height: 0.8rem;
+}
+
+.menu-container h1 {
+  color: white;
+}
+
+.menu-options h2 {
+  color: white;
 }
