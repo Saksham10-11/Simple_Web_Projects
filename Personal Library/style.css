@@ -1,4 +1,8 @@
 :root {
+  --palette-light-green: rgb(217, 237, 191);
+  --palette-light-peach: rgb(255, 185, 150);
+  --pallete-light-orange: rgb(87, 145, 204);
+  --palette-light-yellow: rgb(253, 255, 171);
 }
 
 html,
@@ -7,6 +11,7 @@ h1,
 h2,
 h3,
 div,
+img,
 p {
   padding: 0;
   margin: 0;
@@ -30,6 +35,22 @@ body {
 
 .header-container {
   background-color: aquamarine;
+  display: inline-flex;
+}
+
+.left-header-container {
+  background-color: bisque;
+  display: inline-flex;
+  width: 50%;
+  align-items: center;
+}
+
+.right-header-container {
+  background-color: cadetblue;
+  display: inline-flex;
+  width: 50%;
+  align-items: center;
+  flex-direction: row-reverse;
 }
 
 .center-container {
@@ -40,9 +61,48 @@ body {
 
 .content-container {
   background-color: beige;
+  padding: 0.5rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.cards-container {
+  background-color: aqua;
+  height: 41rem;
   display: grid;
-  grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.5rem;
+  padding: 1rem;
+  overflow: auto;
+}
+
+.card {
+  background-color: aquamarine;
+  height: 19rem;
+  border-radius: 10px;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 5fr 23fr 7fr;
+}
+
+.card-content {
+  background-color: blanchedalmond;
+  display: inline-flex;
+  flex-direction: column;
+  padding-left: 0.2rem;
+  padding-top: 1rem;
+  text-align: justify;
+  padding-left: 1rem;
+}
+
+.card-buttons {
+  background-color: cadetblue;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 2rem;
+  justify-content: center;
 }
 
 .right-container {
@@ -53,8 +113,104 @@ body {
 
 .todo-container {
   background-color: cornsilk;
+  padding: 0.5rem;
 }
 
-.noted-container {
+.todo-content-container {
+  background-color: wheat;
+  height: 85%;
+  border-radius: 10px;
+  display: grid;
+  padding: 0.5rem;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: whitesmoke;
+}
+
+.todo-content {
+  display: inline-flex;
+  justify-items: start;
+  align-items: center;
+  text-align: justify;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.notes-container {
   background-color: azure;
+  padding: 0.5rem;
+}
+
+.notes-content-container {
+  background-color: indianred;
+  height: 85%;
+  border-radius: 10px;
+  display: grid;
+  padding: 0.5rem;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: antiquewhite;
+}
+
+.notes-content {
+  display: inline-flex;
+  justify-items: start;
+  align-items: center;
+  text-align: justify;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.library-logo {
+  height: 3rem;
+  width: 3rem;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+}
+
+.secondary-icons {
+  height: 2rem;
+  width: 2rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+}
+
+button {
+  color: #fff;
+  background-color: burlywood;
+  border: none;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+}
+
+.menu-tags {
+  padding-top: 0.2rem;
+  padding-left: 1rem;
+}
+
+.create-line {
+  border-top: 1px;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+#strip {
+  background-color: var(--palette-light-peach);
+  display: inline-flex;
+  flex-direction: row-reverse;
+  padding-top: 0.5rem;
+}
+
+.read-status-icon {
+  height: 2rem;
+  width: 2rem;
+  padding-left: 0.5rem;
 }
