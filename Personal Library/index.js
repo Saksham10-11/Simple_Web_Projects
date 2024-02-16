@@ -13,15 +13,16 @@ function addBookToLibrary(title, author, pages, edition, publication) {
   myLibrary.push(book);
 }
 
-function createHtml(book) {
+function createHtml(book, idx) {
   let html = `
   <div class="card">
     <div id="strip">
       <img
         src="./icons/trash-can-10417.svg"
         alt="Delete-symbol"
-        class="secondary-icons"
+        class="secondary-icons delete-button"
         onmouseover="this.style.cursor='pointer'"
+        onclick="handleDelete(${idx})"
       />
     </div>
     <div class="card-content">
@@ -45,12 +46,29 @@ function createHtml(book) {
   return html;
 }
 
-function displayBooks(cardContainer) {
+function displayBooks() {
+  const cardContainer = document.querySelector(".cards-container");
   let n = myLibrary.length;
+  cardContainer.innerHTML = null;
   for (let i = 0; i < n; ++i) {
-    const htmlContent = createHtml(myLibrary[i]);
+    const htmlContent = createHtml(myLibrary[i], i);
     cardContainer.innerHTML = cardContainer.innerHTML + htmlContent;
   }
+}
+
+function handleSubmit(title, author, publication, edition, pages) {
+  addBookToLibrary(title, author, pages, edition, publication);
+  displayBooks();
+}
+
+function handleDelete(idx) {
+  myLibrary.splice(idx, 1);
+  displayBooks();
+}
+
+function clearForm() {
+  const form = document.querySelector(".form-form");
+  form.reset();
 }
 
 addBookToLibrary(
@@ -97,18 +115,37 @@ addBookToLibrary(
 );
 
 if (typeof document != null) {
-  const cardContainer = document.querySelector(".cards-container");
   const dialog = document.querySelector("dialog");
   const showDialog = document.getElementById("showDialogButton");
   const dialogCloseButton = document.querySelector(".dialog-close-button");
+  const formSubmitButton = document.querySelector(".form-submit-button");
+  const titleField = document.getElementById("title");
+  const authorField = document.getElementById("author");
+  const publicationField = document.getElementById("publication");
+  const editionField = document.getElementById("edition");
+  const pagesField = document.getElementById("pages");
 
-  displayBooks(cardContainer);
+  displayBooks();
 
   showDialog.addEventListener("click", () => {
     dialog.showModal();
   });
 
   dialogCloseButton.addEventListener("click", () => {
+    clearForm();
+    dialog.close();
+  });
+
+  formSubmitButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    handleSubmit(
+      titleField.value,
+      authorField.value,
+      publicationField.value,
+      editionField.value,
+      pagesField.value
+    );
+    clearForm();
     dialog.close();
   });
 }

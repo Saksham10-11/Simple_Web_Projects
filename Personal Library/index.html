@@ -110,8 +110,40 @@
             onmouseover="this.style.cursor='pointer'"
           />
         </div>
-        <div class="dialog-main-section"></div>
-        <form action=""></form>
+        <div class="dialog-main-section">
+          <form class="form-form" action="/my-handling-form-page" method="post">
+            <div class="form-content-container">
+              <div class="input-div-container">
+                <label for="title">Title :</label>
+                <input required type="text" id="title" name="book_title" />
+              </div>
+              <div class="input-div-container">
+                <label for="author">Author :</label>
+                <input required type="text" id="author" name="book_author" />
+              </div>
+              <div class="input-div-container">
+                <label for="publication">Publication :</label>
+                <input
+                  required
+                  type="text"
+                  id="publication"
+                  name="book_publications"
+                />
+              </div>
+              <div class="input-div-container">
+                <label for="edition">Edition :</label>
+                <input required type="text" id="edition" name="book_edition" />
+              </div>
+              <div class="input-div-container">
+                <label for="pages">Pages :</label>
+                <input required type="text" id="pages" name="book_pages" />
+              </div>
+              <div class="form-button">
+                <button class="form-submit-button" type="submit">Add</button>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </dialog>
     <script src="./index.js"></script>

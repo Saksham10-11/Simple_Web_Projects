@@ -239,6 +239,7 @@ button {
 
 .dialog-main-section {
   background-color: blanchedalmond;
+  display: grid;
 }
 
 .dialog-close-button {
@@ -255,4 +256,47 @@ button {
   box-shadow: 5px 10px #888888;
   border-radius: 8px;
   border: none;
+}
+
+form {
+  margin: 0 auto;
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+}
+
+input {
+  font: 1em sans-serif;
+  width: 300px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+input:focus {
+  border-color: #000;
+}
+
+label {
+  display: inline-block;
+  width: 140px;
+  text-align: right;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.form-content-container {
+  margin: 2.5rem;
+  margin-top: 1.5rem;
+}
+
+.input-div-container {
+  margin: 0.5rem;
+}
+
+.form-button {
+  margin: auto;
+  padding-top: 1rem;
+  padding-left: 9rem;
 }
