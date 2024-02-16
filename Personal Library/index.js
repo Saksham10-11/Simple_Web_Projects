@@ -77,8 +77,8 @@ function toggleImage(id) {
   const imgElement = document.getElementById(id);
   console.log(id);
   console.log(imgElement);
-  let img1 = "./icons/cross-mark-button-svgrepo-com.svg";
-  let img2 = "./icons/white-heavy-check-mark-svgrepo-com.svg";
+  let img1 = "icons/cross-mark-button-svgrepo-com.svg";
+  let img2 = "icons/white-heavy-check-mark-svgrepo-com.svg";
   console.log(imgElement.src);
   imgElement.src = imgElement.src === img1 ? img2 : img1;
 }
