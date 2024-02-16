@@ -40,7 +40,7 @@ dialog {
 }
 
 .header-container {
-  background-color: aquamarine;
+  background-color: rgb(245, 245, 220);
   display: inline-flex;
 }
 
@@ -52,7 +52,7 @@ dialog {
 }
 
 .right-header-container {
-  background-color: cadetblue;
+  background-color: bisque;
   display: inline-flex;
   width: 50%;
   align-items: center;
@@ -60,20 +60,20 @@ dialog {
 }
 
 .center-container {
-  background-color: burlywood;
+  background-color: rgb(245, 245, 220);
   display: grid;
   grid-template-columns: 4fr 1.5fr;
 }
 
 .content-container {
-  background-color: beige;
+  background-color: rgb(245, 245, 220);
   padding: 0.5rem;
   padding-top: 1rem;
   padding-left: 1rem;
 }
 
 .cards-container {
-  background-color: aqua;
+  background-color: antiquewhite;
   height: 41rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -81,10 +81,11 @@ dialog {
   gap: 2rem;
   padding: 1rem;
   overflow: auto;
+  border-radius: 10px;
 }
 
 .card {
-  background-color: aquamarine;
+  background-color: rgb(245, 245, 220);
   height: 19rem;
   border-radius: 10px;
   overflow: hidden;
@@ -123,13 +124,12 @@ dialog {
 }
 
 .todo-content-container {
-  background-color: wheat;
   height: 85%;
   border-radius: 10px;
   display: grid;
   padding: 0.5rem;
   grid-template-rows: 1fr 1fr 1fr;
-  background-color: whitesmoke;
+  background-color: antiquewhite;
 }
 
 .todo-content {
@@ -142,12 +142,11 @@ dialog {
 }
 
 .notes-container {
-  background-color: azure;
+  background-color: beige;
   padding: 0.5rem;
 }
 
 .notes-content-container {
-  background-color: indianred;
   height: 85%;
   border-radius: 10px;
   display: grid;

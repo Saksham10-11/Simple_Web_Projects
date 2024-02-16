@@ -39,6 +39,8 @@ function createHtml(book, idx) {
         class="read-status-icon"
         alt="Read Status"
         onmouseover="this.style.cursor='pointer'"
+        id="card-${idx}"
+        onclick="toggleImage('card-${idx}')"
       />
     </div>
   </div>
@@ -69,6 +71,17 @@ function handleDelete(idx) {
 function clearForm() {
   const form = document.querySelector(".form-form");
   form.reset();
+}
+
+function toggleImage(id) {
+  const imgElement = document.getElementById(id);
+  console.log(id);
+  console.log(imgElement);
+  let img1 = "http://127.0.0.1:5500/icons/cross-mark-button-svgrepo-com.svg";
+  let img2 =
+    "http://127.0.0.1:5500/icons/white-heavy-check-mark-svgrepo-com.svg";
+  console.log(imgElement.src);
+  imgElement.src = imgElement.src === img1 ? img2 : img1;
 }
 
 addBookToLibrary(
