@@ -22,135 +22,14 @@
           <h2 class="menu-tags">About</h2>
         </div>
         <div class="right-header-container">
-          <button>Add New Book</button>
+          <button id="showDialogButton">Add New Book</button>
         </div>
       </div>
       <div class="center-container">
         <div class="content-container">
           <h2>Available Books</h2>
           <div class="cards-container">
-            <div class="card">
-              <div id="strip">
-                <img
-                  src="./icons/trash-can-10417.svg"
-                  alt="Delete-symbol"
-                  class="secondary-icons"
-                  onmouseover="this.style.cursor='pointer'"
-                />
-              </div>
-              <div class="card-content">
-                <h2>Title : Concepts of Physics</h2>
-                <h2>Author : H.C.Verma</h2>
-                <h2>Edition : 12th edition</h2>
-                <h2>Pages : 1096</h2>
-                <h2>Publications : McGraw Hill</h2>
-              </div>
-              <div class="card-buttons">
-                <h2>Read Status :</h2>
-                <img
-                  src="./icons/cross-mark-button-svgrepo-com.svg"
-                  class="read-status-icon"
-                  alt="Read Status"
-                  onmouseover="this.style.cursor='pointer'"
-                />
-              </div>
-            </div>
-            <div class="card">
-              <div id="strip">
-                <img
-                  src="./icons/trash-can-10417.svg"
-                  alt="Delete-symbol"
-                  class="secondary-icons"
-                />
-              </div>
-              <div class="card-content">
-                <h2>Title : Concepts of Physics</h2>
-                <h2>Author : H.C.Verma</h2>
-                <h2>Edition : 12th edition</h2>
-                <h2>Pages : 1096</h2>
-                <h2>Publications : McGraw Hill</h2>
-              </div>
-              <div class="card-buttons">
-                <h2>Read Status :</h2>
-                <img
-                  src="./icons/cross-mark-button-svgrepo-com.svg"
-                  class="read-status-icon"
-                  alt="Read Status"
-                />
-              </div>
-            </div>
-            <div class="card">
-              <div id="strip">
-                <img
-                  src="./icons/trash-can-10417.svg"
-                  alt="Delete-symbol"
-                  class="secondary-icons"
-                />
-              </div>
-              <div class="card-content">
-                <h2>Title : Concepts of Physics</h2>
-                <h2>Author : H.C.Verma</h2>
-                <h2>Edition : 12th edition</h2>
-                <h2>Pages : 1096</h2>
-                <h2>Publications : McGraw Hill</h2>
-              </div>
-              <div class="card-buttons">
-                <h2>Read Status :</h2>
-                <img
-                  src="./icons/cross-mark-button-svgrepo-com.svg"
-                  class="read-status-icon"
-                  alt="Read Status"
-                />
-              </div>
-            </div>
-            <div class="card">
-              <div id="strip">
-                <img
-                  src="./icons/trash-can-10417.svg"
-                  alt="Delete-symbol"
-                  class="secondary-icons"
-                />
-              </div>
-              <div class="card-content">
-                <h2>Title : Concepts of Physics</h2>
-                <h2>Author : H.C.Verma</h2>
-                <h2>Edition : 12th edition</h2>
-                <h2>Pages : 1096</h2>
-                <h2>Publications : McGraw Hill</h2>
-              </div>
-              <div class="card-buttons">
-                <h2>Read Status :</h2>
-                <img
-                  src="./icons/cross-mark-button-svgrepo-com.svg"
-                  class="read-status-icon"
-                  alt="Read Status"
-                />
-              </div>
-            </div>
-            <div class="card">
-              <div id="strip">
-                <img
-                  src="./icons/trash-can-10417.svg"
-                  alt="Delete-symbol"
-                  class="secondary-icons"
-                />
-              </div>
-              <div class="card-content">
-                <h2>Title : Concepts of Physics</h2>
-                <h2>Author : H.C.Verma</h2>
-                <h2>Edition : 12th edition</h2>
-                <h2>Pages : 1096</h2>
-                <h2>Publications : McGraw Hill</h2>
-              </div>
-              <div class="card-buttons">
-                <h2>Read Status :</h2>
-                <img
-                  src="./icons/cross-mark-button-svgrepo-com.svg"
-                  class="read-status-icon"
-                  alt="Read Status"
-                />
-              </div>
-            </div>
+            <!-- CARDS ADDED DYNAMICALLY USING JS -->
           </div>
         </div>
         <div class="right-container">
@@ -221,6 +100,20 @@
         </div>
       </div>
     </div>
+    <dialog id="dialogBox">
+      <div class="dialog-box-container">
+        <div class="dialog-top-section">
+          <img
+            src="./icons/error-10379.svg"
+            class="dialog-close-button"
+            alt="close button"
+            onmouseover="this.style.cursor='pointer'"
+          />
+        </div>
+        <div class="dialog-main-section"></div>
+        <form action=""></form>
+      </div>
+    </dialog>
     <script src="./index.js"></script>
   </body>
 </html>

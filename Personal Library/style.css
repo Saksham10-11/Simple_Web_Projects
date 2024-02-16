@@ -26,6 +26,12 @@ body {
   height: 100%;
 }
 
+dialog {
+  border: none;
+  overflow: hidden;
+  padding: 0;
+}
+
 .main-container {
   background-color: bisque;
   height: 100%;
@@ -72,7 +78,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 1.5rem;
+  gap: 2rem;
   padding: 1rem;
   overflow: auto;
 }
@@ -213,4 +219,40 @@ button {
   height: 2rem;
   width: 2rem;
   padding-left: 0.5rem;
+}
+
+.dialog-box-container {
+  height: 25rem;
+  width: 40rem;
+  border-radius: 10px;
+  background-color: aquamarine;
+  display: grid;
+  grid-template-rows: 1fr 9fr;
+}
+
+.dialog-top-section {
+  background-color: beige;
+  display: inline-flex;
+  flex-direction: row-reverse;
+  padding: 1rem;
+}
+
+.dialog-main-section {
+  background-color: blanchedalmond;
+}
+
+.dialog-close-button {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+#dialogBox::backdrop {
+  opacity: 0.5;
+  background-color: #888888;
+  backdrop-filter: blur(50px);
+}
+#dialogBox {
+  box-shadow: 5px 10px #888888;
+  border-radius: 8px;
+  border: none;
 }
