@@ -121,15 +121,21 @@ let game = gameBoard();
 let controller = gameControler(game);
 let costumJudge = judge(game);
 
-let idx = 0;
-while (controller.checkStatus(costumJudge)) {
-  controller.printBoard();
-  controller.showTurn();
-  controller.placeToken(Math.floor(idx / 3), idx % 3);
-  controller.changeTurn();
-  idx++;
-}
-controller.printBoard();
+// let idx = 0;
+// while (controller.checkStatus(costumJudge)) {
+//   controller.printBoard();
+//   controller.showTurn();
+//   controller.placeToken(Math.floor(idx / 3), idx % 3);
+//   controller.changeTurn();
+//   idx++;
+// }
+// controller.printBoard();
 
 if (typeof document !== null) {
+  const cells = document.querySelectorAll(".game-cell");
+  for (let i = 0; i < cells.length; ++i) {
+    cells[i].addEventListener("click", (event) => {
+      console.log(event.target.id);
+    });
+  }
 }
