@@ -20,17 +20,17 @@ body {
 }
 
 .main-container {
-  background-color: rgb(226, 173, 103);
   display: grid;
   grid-template-rows: 2fr 15fr 1fr;
   height: 100%;
+  background-color: rgba(169, 169, 169, 0.472);
 }
 
 .top-container {
-  background-color: aquamarine;
   display: inline-flex;
   padding-left: 2rem;
   align-items: center;
+  background-color: #ff6f61; /* Coral pink */
 }
 
 .logo {
@@ -41,37 +41,42 @@ body {
 
 .title {
   font-size: 3rem;
-  font-family: cursive;
+  font-family: "Comic Sans MS", cursive;
+  color: #fff; /* White */
 }
 
 .middle-container {
-  background-color: bisque;
-  padding: 2rem;
+  margin: 2rem;
   display: grid;
   grid-template-rows: 1fr 9fr;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
 }
 
 .heading-container {
-  padding-left: 14rem;
-  background-color: cornsilk;
+  background-color: #ff6f61; /* Coral pink */
+  padding-left: 1rem;
+  /* border-radius: 10px; */
 }
 
 .main-heading {
   font-size: 2.5rem;
-  font-family: cursive;
+  font-family: "Comic Sans MS", cursive;
   font-weight: lighter;
+  color: #fff; /* White */
 }
 
 .game-container {
   padding-left: 2rem;
-  background-color: cadetblue;
+  background-color: #ffec6e; /* Yellow */
   padding: 2rem;
   display: grid;
   grid-template-columns: 6fr 4fr;
+  /* border-radius: 10px; */
 }
 
 .grid-container {
-  background-color: darkcyan;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -79,10 +84,10 @@ body {
   padding-right: 10rem;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  border-radius: 10px;
 }
 
 .game-cell {
-  background-color: blanchedalmond;
   padding: 1rem;
 }
 
@@ -97,10 +102,11 @@ body {
 }
 
 .info-container {
-  background-color: azure;
   display: grid;
   grid-template-rows: 1fr 10fr;
   padding: 1rem;
+  background-color: #74d3ae; /* Mint green */
+  border-radius: 10px;
 }
 
 .info-heading {
@@ -111,15 +117,14 @@ body {
   border-radius: 10px;
   padding: 0.5rem;
   text-align: justify;
-  background-color: bisque;
   font-size: 1.7rem;
 }
 
 .bottom-container {
-  background-color: burlywood;
   display: inline-flex;
   align-items: center;
   padding-left: 2rem;
+  background-color: #ff6f61; /* Coral pink */
 }
 
 .game-cell-img {
