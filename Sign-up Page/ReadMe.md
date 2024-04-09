@@ -1,3 +1,3 @@
 <h1>Click the link below ...</h1>
 
-https://saksham10-11.github.io/The_Odin_Project/Sign-up%20Page/
+https://saksham10-11.github.io/Simple_Web_Projects/Sign-up%20Page/
