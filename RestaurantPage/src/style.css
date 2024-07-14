@@ -1,0 +1,49 @@
+html,
+body,
+header,
+nav,
+div,
+button,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  top: 1rem;
+}
+
+.navbar > button {
+  border: 0cap;
+  border-radius: 1rem;
+  height: 3.5rem;
+  width: 8rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.main-container {
+  height: 50rem;
+  margin-right: 3rem;
+  margin-left: 3rem;
+  background-color: aquamarine;
+}
+
+.home-container {
+  width: 800px;
+  height: 100%;
+  background-image: url(./Images/italian-cuisine-2378729_1280.jpg);
+  background-repeat: no-repeat;
+}

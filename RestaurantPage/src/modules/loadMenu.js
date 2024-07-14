@@ -1,1 +1,3 @@
-function loadMenu() {}
+export default function loadMenu() {
+  alert("Loading menu");
+}

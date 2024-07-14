@@ -1,1 +1,3 @@
-function loadAbout() {}
+export default function loadAbout() {
+  alert("Loading about");
+}
